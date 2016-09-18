@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/peachpuff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/id_switch_tab_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        >
+
+        <LinearLayout
+            android:id="@+id/id_tab_today_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/guide_round_selector"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dip" >
+
+            <TextView
+                android:id="@+id/id_today_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="今天综合"
+                android:textColor="@color/mediumseagreen"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_tab_week_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/guide_round_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dip">
+
+            <TextView
+                android:id="@+id/id_week_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="本周消费"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+       <LinearLayout
+            android:id="@+id/id_tab_month_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/guide_round_selector"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dip" >
+
+            <TextView
+                android:id="@+id/id_month_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="本月充值"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <!--<LinearLayout-->
+            <!--android:id="@+id/id_tab_towmonth_ll"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:clickable="true"-->
+            <!--android:background="@drawable/guide_round_selector"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="20dip" >-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/id_tab_towmonth_Tx"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="近两月"-->
+                <!--android:textColor="#000000"-->
+                <!--android:textSize="16sp"/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

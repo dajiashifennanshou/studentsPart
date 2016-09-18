@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/peachpuff"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/steelblue"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+
+            <LinearLayout
+                android:id="@+id/change_pass_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_forword_selecter"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleY="0.7"
+                    android:scaleX="0.7"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ico_forward" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="修改密码"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    原密码："
+                android:textSize="18sp"
+                android:padding="10dp" />
+            <EditText
+                android:id="@+id/change_pass_oldpass"
+                android:layout_width="match_parent"
+                android:password="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input_shape"
+                android:maxLength="11"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/lightgray"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="1dp"></View>
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    新密码："
+                android:textSize="18sp"
+                android:padding="10dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/change_pass_newpass"
+                android:password="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input_shape"
+                android:maxLength="11"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/lightgray"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="1dp"></View>
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重复密码："
+                android:textSize="18sp"
+                android:padding="10dp" />
+            <EditText
+                android:id="@+id/change_pass_repeatpass"
+                android:layout_width="match_parent"
+                android:password="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input_shape"
+                android:maxLength="11"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/lightgray"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="1dp"></View>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:id="@+id/change_pass_save_change"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textSize="18sp"
+            android:background="@drawable/login_button"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/pay_check_listitem_shape"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/pay_check_list_item_shape"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:text="请假条"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="请假类型:"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ask_leave_type"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="2016-2-01"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray">
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="请假事由:"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ask_leave_reason"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="2016-2-01"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray">
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="审批内容:"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ask_leave_content"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="2016-2-01"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray">
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="班主任审批人:"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ask_leave_class_agree"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="2016-2-01"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray">
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="结果:"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ask_leave_result"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="2016-2-01"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray">
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="开始时间:"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ask_leave_startTime"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="2016-2-01"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightgray">
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="结束时间:"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/ask_leave_endTime"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:text="2016-2-01"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

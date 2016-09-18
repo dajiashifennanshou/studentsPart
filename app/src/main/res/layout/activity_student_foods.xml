@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/steelblue"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+
+            <LinearLayout
+                android:id="@+id/student_foods_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_forword_selecter"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ico_forward" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="学生食谱"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/lightgray"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="时间"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="早餐"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="午餐"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="晚餐"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="夜宵"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="周一"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/foods_zao_week1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wu_week1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wan_week1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_ye_week1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="周二"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/foods_zao_week2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wu_week2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wan_week2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_ye_week2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="周三"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/foods_zao_week3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wu_week3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wan_week3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_ye_week3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:layout_margin="1dp"
+                            android:text="周四"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/foods_zao_week4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wu_week4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wan_week4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_ye_week4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:layout_margin="1dp"
+                            android:text="周五"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/foods_zao_week5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wu_week5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wan_week5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_ye_week5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_margin="1dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="周六"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/foods_zao_week6"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wu_week6"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wan_week6"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_ye_week6"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:layout_margin="1dp"
+                            android:text="周日"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/foods_zao_week7"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wu_week7"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_wan_week7"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/foods_ye_week7"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text=""
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/steelblue"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/today_check_back"
+                android:clickable="true"
+                android:background="@drawable/back_forword_selecter"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleY="0.7"
+                    android:scaleX="0.7"
+                    android:src="@drawable/ico_forward"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="今日考勤"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+        <include layout="@layout/activity_main_top_tab" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_page_vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+</LinearLayout>

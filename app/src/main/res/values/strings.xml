@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">家长端</string>
+    <!-- http -->
+    <string name="str_loading">加载中……</string>
+    <string name="str_no_net">没有网络连接</string>
+    <string name="str_loading_wait">请稍候…</string>
+    <string name="str_loading_logout">正在退出…</string>
+    <string name="str_load_retry_btn">重新加载</string>
+    <string name="str_dialog_apk_downloding_msg">正在下载客户端(%1$d %2$s)</string>
+    <string name="str_load_retry_btn_refresh">刷新</string>
+    <string name="str_load_retry_txt">获取数据失败</string>
+    <!-- user -->
+    <string name="str_user_no_vip">亲，你的使用时间已过期，请充值</string>
+    <string name="str_user_info_overTime">登录过期，请重新登录</string>
+    <string name="str_user_status_wrong">用户身份不明</string>
+    <string name="str_user_logout">再按一次退出</string>
+    <string name="str_user_out">退出登录</string>
+    <!-- login -->
+    <string name="str_login_no_school_code_users">此学校没有用户</string>
+    <string name="str_login_no_school_code">学校编号不能为空</string>
+    <string name="str_login_no_student_code">账号不存在，请重新输入</string>
+    <string name="str_login_wrong_school_code">没有此学校编号</string>
+    <string name="str_login_no_user_name">账号不能为空</string>
+    <string name="str_login_no_password">密码不能为空</string>
+    <string name="str_login_success">登录成功</string>
+    <string name="str_login_studentCode_notExist">账号不存在，请重新输入</string>
+    <string name="str_login_password_wrong">密码不匹配</string>
+    <string name="str_login_times_out">登录失败次数超过限制，请稍候再试</string>
+    <!-- 家长端主页-->
+    <string name="str_main_option_new_message">学校通知</string>
+    <string name="str_main_option_new_test">最新检测</string>
+    <string name="str_main_option_contact_teacher">联系老师</string>
+    <string name="str_main_option_new_check">考勤查询</string>
+    <string name="str_main_option_school_describe">我的校园</string>
+    <string name="str_main_option_class_life">学生食谱</string>
+    <string name="str_main_option_school_dining">消费查询</string>
+    <string name="str_main_option_study_subject">请假信息</string>
+    <string name="str_main_option_student_info">学生信息</string>
+    <string name="str_main_option_contact_us">联系我们</string>
+    <string name="str_main_option_kecheng">课程表</string>
+    <string name="str_main_option_change_pass">修改密码</string>
+    <string name="str_main_option_more">更多</string>
+    <string name="str_main_top_student_no_photo">暂时没有您的照片哦，请采集照片</string>
+    <string name="str_main_top_student_info">%1$d级%2$d班%3$s</string>
+    <!-- 考勤检测-->
+    <string name="str_today_check_nomal">正常刷卡</string>
+    <string name="str_today_check_unnomal">早退</string>
+    <string name="str_today_check_late">迟到</string>
+    <string name="str_today_check_time">%1$s&#160;%2$s</string>
+    <string name="str_today_check_noinfo">没有该学生的考勤信息</string>
+    <!-- 修改密码-->
+    <string name="str_change_pass_nopass">请输入原始密码</string>
+    <string name="str_change_pass_nonewpass">请输入新密码</string>
+    <string name="str_change_pass_repeat_newpass">请再次输入新密码</string>
+    <string name="str_change_pass_repeat_wrong">新密码不一致，请重新输入</string>
+    <string name="str_change_pass_wrong">原始密码输入错误</string>
+    <string name="str_change_pass_success">密码修改成功,请重新登录</string>
+    <string name="str_change_pass_fail">密码修改失败</string>
+    <!-- 联系老师-->
+    <string name="str_contact_teacher_manager">班主任</string>
+    <string name="str_contact_teacher_no_phone">对不起，没有电话号码</string>
+    <!-- 请假信息-->
+    <string name="str_ask_leave_agree">同意</string>
+    <string name="str_ask_leave_disagree">不同意</string>
+    <!-- 交易信息-->
+    <string name="str_pay_info_rest">余&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;额:</string>
+</resources>
